@@ -102,7 +102,7 @@ if __name__ == "__main__":
 	# Opening connection to mysql DB
 	logger.info('Connecting to MySQL DB')
 	try:
-		# connection = mysql.connector.connect(host=mysql_config_mysql_host, database=mysql_config_mysql_db, user=mysql_config_mysql_user, password=mysql_config_mysql_pass)
+		connection = mysql.connector.connect(host=mysql_config_mysql_host, database=mysql_config_mysql_db, user=mysql_config_mysql_user, password=mysql_config_mysql_pass)
 		cursor = get_cursor()
 		if connection.is_connected():
 			db_Info = connection.get_server_info()
